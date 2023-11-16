@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <style>
+    section {
+      padding: 60px 0;
+    }
+
+    .oI {
+      height: 100px;
+      width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="image/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-center"
+          data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+          data-bs-title="bootstrap-logo.">
+        Bootstrap
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#intro">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#AboutTheBook">About The Book</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#review">Review</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-secondary d-none d-lg-inline" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="intro">
+    <div class="container-lg">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-5 text-center text-md-start">
+          <h1>
+            <div class="display-2">Bootstrap</div>
+            <div class="display-5 text-muted">Make styleing easy</div>
+          </h1>
+          <p class="lead my-4 text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, quaerat?
+          </p>
+          <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a><br>
+          <a href="#offcanvasScrolling" data-bs-toggle="offcanvas"  aria-controls="offcanvasScrolling">Explore offcanvas</a>
+        </div>
+        <div class="col-md-5 text-center d-none d-md-block">
+          <img class="img-fluid" src="image/bootstrap-4-quick-start-768x624.png" alt="E-book cover"
+            data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+            data-bs-title="Bootstrap-4-quick-start.">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="pricing" class="bg-light mt-5">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2>Pricing Plans</h2>
+        <p class="lead text-muted">Choose a pricing plan that suit you.</p>
+      </div>
+      <div class="row my-5 align-items-center justify-content-center g-0">
+        <div class="col-8 col-lg-4 col-xl-3">
+          <div class="card border-0">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Starter Edition</h4>
+              <p class="lead card-subtitle">E-Book download only</p>
+              <p class="text-primary my-4 display-5 fw-bold">$12.99</p>
+              <p class="card-text mx-5 text-muted d-none d-md-block">Lorem ipsum dolor sit Lorem ipsum dolor sit
+                amet.amet consectetur adipisicing elit.</p>
+              <a href="#bP" class="btn btn-primary btn-lg mt-3" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" data-bs-title="Starter Edition
+                E-Book download only in $12.99.">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-8 col-lg-4 col-xl-3">
+          <div class="card border-primary">
+            <div class="card-header text-center text-primary">Most Popular</div>
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Complete Edition</h4>
+              <p class="lead card-subtitle">E-book download & all updates</p>
+              <p class="text-primary my-4 display-5 fw-bold">$18.99</p>
+              <p class="card-text mx-5 text-muted d-none d-md-block">Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                dolor sit amet.adipisicing elit.</p>
+              <a href="#bP" class="btn btn-primary btn-lg mt-3" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" data-bs-title="Complete Edition
+                E-book download & all updates in $18.99.">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-8 col-lg-4 col-xl-3">
+          <div class="card border-0">
+            <div class="card-body text-center py-4">
+              <h4 class="card-title">Ultimate Edition</h4>
+              <p class="lead card-subtitle">download, updates & extrs</p>
+              <p class="text-primary my-4 display-5 fw-bold">$24.99</p>
+              <p class="card-text mx-5 text-muted d-none d-md-block">Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                dolor sit amet. adipisicing elit.</p>
+              <a href="#bP" class="btn btn-primary btn-lg mt-3" data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-custom-class="custom-tooltip" data-bs-title="Ultimate Edition
+                download, updates & extrs in $24.99.">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="AboutTheBook">
+    <div class="container-md">
+      <div class="text-center">
+        <h2>Inside the Book...</h2>
+        <p class="lead text-muted">A quick glance at the topics you'll learn</p>
+      </div>
+
+      <div class="row my-1 g-5 justify-content-around aline-item-center align-items-center">
+        <div class="col-6 col-lg-4">
+          <img class="img-fluid" src="image/reference-guide-cover-3d.png" alt="Book image" data-bs-toggle="tooltip"
+            data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Bootstrap-4-Reference-Guide.">
+        </div>
+        <div class="col-lg-6 justify-content-center">
+
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Chapter-1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first Chapter.</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Cum, voluptatum. Quae ratione amet molestiae odit quas, fugit non, sunt quidem fuga in obcaecati,
+                  assumenda omnis. Dolore quo aliquam tempore perspiciatis, similique reprehenderit quas asperiores!.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Chapter-2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second Chapter.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum qui voluptatem nostrum dicta non, numquam voluptate soluta! Neque hic veniam doloribus
+                  natus ad, impedit laboriosam nostrum quos! Enim, suscipit maiores nihil a eum eveniet..
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Chapter-3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third Chapter.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Sit numquam est dolores id, ratione cum quas inventore dolore similique rerum amet minus quis ducimus
+                  asperiores molestias reiciendis? Fugit repellat facilis ex quidem labore dignissimos?.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                  Chapter-4
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the four Chapter.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Sit numquam est dolores id, ratione cum quas inventore dolore similique rerum amet minus quis ducimus
+                  asperiores molestias reiciendis? Fugit repellat facilis ex quidem labore dignissimos?.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                  Chapter-5
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the five Chapter.</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Sit numquam est dolores id, ratione cum quas inventore dolore similique rerum amet minus quis ducimus
+                  asperiores molestias reiciendis? Fugit repellat facilis ex quidem labore dignissimos?.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-light">
+    <div class="container-md">
+      <div class="text-center">
+        <h2>Get in Touch</h2>
+        <p class="lead">Questions to ask? Fill out the form to contact us...</p>
+      </div>
+      <div class="row justify-content-center my-5">
+        <div class="col-md-10 col-lg-6">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Enter an email">
+                <span class="input-group-text" data-bs-toggle="tooltip" data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip" data-bs-title="Enter an email address where we can reply to."><i
+                    class="bi bi-question-circle"></i></span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                <span class="input-group-text" data-bs-toggle="tooltip" data-bs-placement="top"
+                  data-bs-custom-class="custom-tooltip" data-bs-title="Enter your name."><i
+                    class="bi bi-question-circle"></i></span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="textarea">Questions</label>
+              <textarea class="form-control" id="textarea" placeholder="Type Your Questions"
+                style="height: 140px;"></textarea>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="review">
+    <div class="container text-center">
+      <div class="row">
+        <div class="lead text-muted display-5"><i class="bi bi-stars text-warning"></i>Book Reviews</div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card align-items-center border-0" style="width: 18rem;">
+            <img src="image/6915987.png" class="card-img-top oI" alt="...">
+            <h3 class="fw-bold">Name</h3>
+            <div class="card-body">
+              <div class="d-flex justify-content-center">
+                <div><i class="bi bi-star-fill text-warning"></i></div>
+                <div><i class="bi bi-star-fill text-warning"></i></div>
+                <div><i class="bi bi-star-fill text-warning"></i></div>
+                <div><i class="bi bi-star-fill text-warning"></i></div>
+                <div><i class="bi bi-star-fill text-warning"></i></div>
+              </div>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, delectus..</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card align-items-center border-0" style="width: 18rem;">
+            <img src="image/6915987.png" class="card-img-top oI" alt="...">
+            <h3 class="fw-bold">Name</h3>
+            <div class="card-body">
+              <div class="d-flex justify-content-center">
+                <div><i class="bi bi-star-fill text-warning"></i></div>
+                <div><i class="bi bi-star-fill text-warning"></i></div>
+                <div><i class="bi bi-star-fill text-warning"></i></div>
+                <div><i class="bi bi-star-fill text-warning"></i></div>
+                <div><i class="bi bi-star-half text-warning"></i></div>
+              </div>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, delectus..</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card align-items-center border-0" style="width: 18rem;">
+            <img src="image/6915987.png" class="card-img-top oI" alt="...">
+            <h3 class="fw-bold">Name</h3>
+            <div class="card-body">
+              <div class="d-flex justify-content-center">
+                <div><i class="bi bi-star-fill text-warning"></i></div>
+                <div><i class="bi bi-star-fill text-warning"></i></div>
+                <div><i class="bi bi-star-fill text-warning"></i></div>
+                <div><i class="bi bi-star-fill text-warning"></i></div>
+                <div><i class="bi bi-star text-warning"></i></div>
+              </div>
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque, delectus..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="#signUp" class="bg-body-tertiary">
+    <div class="contaner">
+      <div class="text-center">
+        <h2>Stay in the loop</h2>
+        <p class="text-muted">Get the latest updates as they happen...</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugit sint voluptas laborum modi, cupiditate maiores adipisci ipsa. Maxime reprehenderit quidem voluptates asperiores libero labore. Voluptatem natus ratione quaerat suscipit.</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Register for updates
+        </button>
+      </div>
+      </div>
+    </div>
+  </section>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Get the latest updates</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eveniet libero recusandae odio saepe harum ut veritatis nam quaerat laborum.</p>
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter an email">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum nisi dolor tenetur ut nihil soluta eligendi. Excepturi impedit asperiores dolore reiciendis fugit ipsum illo non error eveniet eos, repellendus corporis?.</p>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+      myInput.focus()
+    })
+  </script>
+</body>
+
+</html>
